@@ -3,7 +3,7 @@ spring:
     name: User-Service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/wedding_mgn
+    url: jdbc:mysql://localhost:3306/Library_Mng
     username: root
     password: Jay@271203
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,7 +17,7 @@ server:
   port: 2712
 
 jwt:
-  secret: MySecretKeyForJwtEncryption1234567890
+  secret: LibraryManagementSystem@2026#JWT$SecretKey!SecureRandom987654321ABCDEF
 
 user-service:
   messages:
