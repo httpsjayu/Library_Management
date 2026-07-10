@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: User-Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/wedding_mgn
+    username: root
+    password: Jay@271203
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 2712
+
+jwt:
+  secret: MySecretKeyForJwtEncryption1234567890
+
+user-service:
+  messages:
+    UserReg: User Registered Successfully
+    UserRegErr: Failed to Register User
+    UserLogin: User Login Successfully
+    UserLoginErr: Invalid Email or Password
