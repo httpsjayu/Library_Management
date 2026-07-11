@@ -25,6 +25,16 @@ server:
 jwt:
   secret: LibraryManagementSystem@2026#JWT$SecretKey!SecureRandom987654321ABCDEF
 
+  management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
+
 user-service:
   messages:
     UserReg: User Registered Successfully
